@@ -42,8 +42,9 @@
         <form action="https://freecatphotoapp.com/submit-cat-photo">
             <!-- add radio buttons-->
             <!-- add label to allow clicking of text to select button -->
-            <label><input type="radio" id="indoor">Indoor</label>
-            <label><input type="radio" id="outdoor">Outdoor</label>
+            <!-- add name attribute with same value to both radio buttons to keep from selecting both simultaneously -->
+            <label><input type="radio" id="indoor" name="indoor-outdoor">Indoor</label>
+            <label><input type="radio" id="outdoor" name="indoor-outdoor">Outdoor</label>
             <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <!-- add button to submit the form data to form action -->
             <button type="submit">Submit</button>
