@@ -54,8 +54,10 @@
             </fieldset>
             <fieldset>
                 <legend>What's your cat's personality</legend>
-                <input type="checkbox" id="loving"><label for="loving">Loving</label>
-
+                <!-- added name attribute to help server process request -->
+                <input type="checkbox" id="loving" name="personality"><label for="loving">Loving</label>
+                <input type="checkbox" id="lazy" name="personality"><label for="lazy">Lazy</label>
+                <input type="checkbox" id="energetic" name="personality"><label for="energetic">Energetic</label>
             </fieldset>
             <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <!-- add button to submit the form data to form action -->
