@@ -48,16 +48,17 @@
                 <!-- add radio buttons-->
                 <!-- add label to allow selecting buttons by clicking their text -->
                 <!-- add name attribute with same value to both radio buttons to keep from selecting both simultaneously -->
-                <!-- add value attribute to keep from submitting indoor-outdoor, same as id -->
-                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+                <!-- add value attribute to keep from submitting indoor-outdoor with data, same as id -->
+                <!-- add checked attribute to check a checkbox by default -->
+                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
                 <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
             </fieldset>
             <fieldset>
                 <legend>What's your cat's personality</legend>
                 <!-- added name attribute to help server process request -->
-                <input type="checkbox" id="loving" name="personality"><label for="loving">Loving</label>
-                <input type="checkbox" id="lazy" name="personality"><label for="lazy">Lazy</label>
-                <input type="checkbox" id="energetic" name="personality"><label for="energetic">Energetic</label>
+                <input type="checkbox" id="loving" name="personality" value="loving" checked><label for="loving">Loving</label>
+                <input type="checkbox" id="lazy" name="personality" value="lazy"><label for="lazy">Lazy</label>
+                <input type="checkbox" id="energetic" name="personality" value="energetic"><label for="energetic">Energetic</label>
             </fieldset>
             <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <!-- add button to submit the form data to form action -->
