@@ -16,7 +16,7 @@
             <li>laser pointers</li>
             <li>lasagna</li>
         </ul>
-        <!-- added figure to associate an image with a caption -->
+        <!-- added figure to associate an image with a caption by adding figcaption -->
         <figure>
             <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
                 alt="A slice of lasagna on a plate.">
@@ -41,14 +41,21 @@
         <!-- add Form element to collect info from users -->
         <!-- add action attribute to show where data is to be sent -->
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <!-- add fieldset to group similar elements -->
+            <!-- add fieldset to group similar elements on their own line, boxing the radio buttons -->
             <fieldset>
+                <!-- add legend elementas a caption for the fieldset -->
+                <legend>Is your cat an indoor or outdoor cat?</legend>
                 <!-- add radio buttons-->
-                <!-- add label to allow clicking of text to select button -->
+                <!-- add label to allow selecting buttons by clicking their text -->
                 <!-- add name attribute with same value to both radio buttons to keep from selecting both simultaneously -->
                 <!-- add value attribute to keep from submitting indoor-outdoor, same as id -->
                 <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
                 <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+            </fieldset>
+            <fieldset>
+                <legend>What's your cat's personality</legend>
+                <input type="checkbox" id="loving"><label for="loving">Loving</label>
+
             </fieldset>
             <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <!-- add button to submit the form data to form action -->
