@@ -1,71 +1,84 @@
-<main>
-    <h1>CatPhotoApp</h1>
-    <section>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
-        <a href="https://freecatphotoapp.com" target="_blank"><img
-                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-                alt="A cute orange cat lying on its back"></a>
-    </section>
-    <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love</h3>
-        <ul>
-            <li>cat nip</li>
-            <li>laser pointers</li>
-            <li>lasagna</li>
-        </ul>
-        <!-- added figure to associate an image with a caption by adding figcaption -->
-        <figure>
-            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-                alt="A slice of lasagna on a plate.">
-            <!-- add em element for emphasis -->
-            <figcaption>Cats <em>love</em> lasagna</figcaption>
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-            <li>flea treatment</li>
-            <li>thunder</li>
-            <li>other cats</li>
-        </ol>
-        <figure>
-            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
-                alt="Five cats looking around a field.">
-            <!-- added strong element emphasize importance or urgency -->
-            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-        </figure>
-    </section>
-    <section>
-        <h2>Cat Form</h2>
-        <!-- add Form element to collect info from users -->
-        <!-- add action attribute to show where data is to be sent -->
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <!-- add fieldset to group similar elements on their own line, boxing the radio buttons -->
-            <fieldset>
-                <!-- add legend elementas a caption for the fieldset -->
-                <legend>Is your cat an indoor or outdoor cat?</legend>
-                <!-- add radio buttons-->
-                <!-- add label to allow selecting buttons by clicking their text -->
-                <!-- add name attribute with same value to both radio buttons to keep from selecting both simultaneously -->
-                <!-- add value attribute to keep from submitting indoor-outdoor with data, same as id -->
-                <!-- add checked attribute to check a checkbox by default -->
-                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
-                <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
-            </fieldset>
-            <fieldset>
-                <legend>What's your cat's personality</legend>
-                <!-- added name attribute to help server process request -->
-                <input type="checkbox" id="loving" name="personality" value="loving" checked><label for="loving">Loving</label>
-                <input type="checkbox" id="lazy" name="personality" value="lazy"><label for="lazy">Lazy</label>
-                <input type="checkbox" id="energetic" name="personality" value="energetic"><label for="energetic">Energetic</label>
-            </fieldset>
-            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-            <!-- add button to submit the form data to form action -->
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-</main>
-<footer>
-    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
-</footer>
+<!-- declaration -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- title shows what browsers will show in the title bar or tab -->
+        <title>CatPhotoApp</title>
+    </head>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos -->
+            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+            <a href="https://freecatphotoapp.com" target="_blank"><img
+                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back"></a>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love</h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <!-- added figure to associate an image with a caption by adding figcaption -->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate.">
+                <!-- add em element for emphasis -->
+                <figcaption>Cats <em>love</em> lasagna</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Five cats looking around a field.">
+                <!-- added strong element emphasize importance or urgency -->
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <!-- add Form element to collect info from users -->
+            <!-- add action attribute to show where data is to be sent -->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- add fieldset to group similar elements on their own line, boxing the radio buttons -->
+                <fieldset>
+                    <!-- add legend elementas a caption for the fieldset -->
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!-- add radio buttons-->
+                    <!-- add label to allow selecting buttons by clicking their text -->
+                    <!-- add name attribute with same value to both radio buttons to keep from selecting both simultaneously -->
+                    <!-- add value attribute to keep from submitting indoor-outdoor with data, same as id -->
+                    <!-- add checked attribute to check a checkbox by default -->
+                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+                    <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality</legend>
+                    <!-- added name attribute to help server process request -->
+                    <input type="checkbox" id="loving" name="personality" value="loving" checked><label
+                        for="loving">Loving</label>
+                    <input type="checkbox" id="lazy" name="personality" value="lazy"><label for="lazy">Lazy</label>
+                    <input type="checkbox" id="energetic" name="personality" value="energetic"><label
+                        for="energetic">Energetic</label>
+                </fieldset>
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <!-- add button to submit the form data to form action -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+
+</html>
